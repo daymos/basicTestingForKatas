@@ -1,5 +1,10 @@
-function a(a,b){
-	for(var j in arguments){
-	console.log(arguments[j].length)}
+function lowercaseCount(str){
+	var res = 0;
+	str.split('').forEach(((el)=>{
+			if(/[A-Z]/.test(el))res++	
+	}))
+	return res	
+	
 }
-a([1,2],3)
+
+console.log(lowercaseCount('Ciao'))
